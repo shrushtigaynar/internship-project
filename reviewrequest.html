@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .leave_option {
+            display: flex;
+            width: 900px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: none;
+        }
+
+        .leave_all {
+            height: 12px;
+            border-radius: 15px;
+        }
+
+        .leave_approved {
+            margin-left: 12px;
+            height: 12px;
+            border-radius: 15px;
+        }
+
+        .leave_pending {
+            margin-left: 12px;
+            height: 12px;
+            border-radius: 15px;
+        }
+
+        .leave_rejected {
+            margin-left: 12px;
+            height: 12px;
+            border-radius: 15px;
+        }
+
+        .leave_date {
+            margin-left: 300px;
+            height: 12px;
+            border-radius: 15px;
+        }
+
+        .leave_type {
+            margin-left: 12px;
+            height: 12px;
+            border-radius: 15px;
+        }
+
+        .date_option {
+            height: 20px;
+            background-color: rgba(206, 200, 200, 0.897);
+            border: none;
+
+        }
+
+        .display_student {
+
+            margin-left: 20px;
+            margin-right: 20px;
+            height: 370px;
+            background-color: white;
+        }
+
+        .display_group {
+            display: flex;
+            padding: 0;
+            border: none;
+        }
+
+        .display_student1 {
+            height: 12px;
+            margin-right: 80px;
+            border: none;
+        }
+
+        .display_student2 {
+            height: 12px;
+            margin-right: 80px;
+            border: none;
+        }
+
+        .display_student3 {
+            height: 12px;
+            border: none;
+        }
+
+        .display_student4 {
+            margin-left: 250px;
+            border-radius: 15px;
+            height: 12px;
+            padding-top: 2px;
+            background-color: rgb(85, 197, 85);
+            border: none;
+        }
+
+        .display_student5 {
+            margin-left: 20px;
+            border-radius: 15px;
+            height: 12px;
+            padding-top: 2px;
+            background-color: rgb(243, 24, 24);
+            border: none;
+        }
+
+        .student_fieldset1 {
+            margin-top: 12px;
+            height: 40px;
+            display: flex;
+            border: none;
+        }
+
+        .student_display {
+            margin-top: 0;
+            font-size: small;
+            color: rgba(82, 77, 77, 0.981);
+
+        }
+
+        .student_1 {
+            margin-left: 0px;
+            border: none;
+
+        }
+
+        .student_2 {
+            width: auto;
+            font-size: small;
+            margin-top: 5px;
+            color: rgba(82, 77, 77, 0.981);
+            border: none;
+        }
+
+        .student_3 {
+            width: 50px;
+            margin-left: 10px;
+            border-radius: 15px;
+            height: 12px;
+            background-color: rgb(85, 197, 85);
+            border: none;
+        }
+
+        .student_4 {
+            margin-left: 10px;
+            border-radius: 15px;
+            height: 12px;
+            margin-left: 15px;
+            background-color: rgb(243, 24, 24);
+            border: none;
+        }
+
+        .student_5 {
+            margin-left: 180px;
+            color: rgba(82, 77, 77, 0.981);
+            border: none;
+            font-size: medium;
+        }
+
+        .student_6 {
+            margin-left: 50px;
+            color: rgba(82, 77, 77, 0.981);
+            border: none;
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body class="body_RR">
+    <div class="admin1">
+        <img class="admin1_img" src="zcoer.png">
+        <p class="admin1_p">Hostel Leave Managment</p>
+        <form class="admin1_form">
+            <input class="admin1_input" type="text" placeholder="search">
+        </form>
+        <img class="admin1_img" src="bell.png">
+        <img class="admin1_img1" src="profile......png">
+    </div>
+    <div class="admin2">
+        <div class="admin2_div1">
+            <fieldset class="admin2_fieldset1">
+                <img class="fieldset_img" src="dashboard.svg">
+                <a href="admindashboard.html" class="board">Dashboard</a>
+            </fieldset>
+            <fieldset class="admin2_fieldset">
+                <img class="fieldset_img" src="feedback-icon-png-2.jpg">
+                Review Request
+            </fieldset>
+            <fieldset class="admin2_fieldset">
+                <img class="fieldset_img" src="analytics.svg">
+                Analytics
+            </fieldset>
+            <fieldset class="admin2_fieldset">
+                <img class="fieldset_img" src="notify.png">
+               <a href="notification.html" class="board">Notification</a>
+            </fieldset>
+            <fieldset class="admin2_fieldset">
+                <img class="fieldset_img" src="pro.png">
+                Profile
+            </fieldset>
+            <fieldset class="admin2_fieldset">
+                <img class="fieldset_img" src="settings.png">
+                Settings
+            </fieldset>
+
+            <fieldset class="log_out">
+                Log out
+            </fieldset>
+        </div>
+        <div class="admin2_div2">
+            <p class="admin2_p">Leave Requests</p>
+            <p class="admin2_p1">Your student's leave requests at a glance</p>
+            <fieldset class="leave_option">
+                <fieldset class="leave_all">
+                    All
+                </fieldset>
+                <fieldset class="leave_approved">
+                    Approved
+                </fieldset>
+                <fieldset class="leave_pending">
+                    Pending
+                </fieldset>
+                <fieldset class="leave_rejected">
+                    Rejected
+                </fieldset>
+                <fieldset class="leave_date">
+                    <select class="date_option" id="Date" name="Date">
+                        <option value="Date">Date Request</option>
+                    </select>
+                </fieldset>
+                <fieldset class="leave_type">
+                    <select class="date_option" id="Date" name="Date">
+                        <option value="Date">Leave Type</option>
+                    </select>
+                </fieldset>
+            </fieldset>
+
+            <fieldset class="display_student">
+                <fieldset class="display_group">
+                    <fieldset class="display_student1">Student</fieldset>
+                    <fieldset class="display_student2">Data Range</fieldset>
+                    <fieldset class="display_student3">Action</fieldset>
+                    <fieldset class="display_student4">Approve all</fieldset>
+                    <fieldset class="display_student5">Reject all</fieldset>
+                </fieldset>
+                <fieldset class="student_fieldset1">
+                    <img class="ethan_img" src="profile img.png">
+                    <fieldset class="student_1">
+                        Shreyas Patil
+                        <p class="student_display">Personal Leave</p>
+                    </fieldset>
+                    <fieldset class="student_2">
+                        27th Apr 2025-28th Apr 2025
+                    </fieldset>
+                    <fieldset class="student_3">
+                        Approve
+                    </fieldset>
+                    <fieldset class="student_4">
+                        Reject
+                    </fieldset>
+                    <fieldset class="student_5">
+                        view
+                    </fieldset>
+                    <fieldset class="student_6">
+                        2h ago
+                    </fieldset>
+                </fieldset>
+                <fieldset class="student_fieldset1">
+                    <img class="ethan_img" src="profile img.png">
+                    <fieldset class="student_1">
+                        Nilesh Kumar
+                        <p class="student_display">Sick Leave</p>
+                    </fieldset>
+                    <fieldset class="student_2">
+                        12th May 2025-17th May 2025
+                    </fieldset>
+                    <fieldset class="student_3">
+                        Approve
+                    </fieldset>
+                    <fieldset class="student_4">
+                        Reject
+                    </fieldset>
+                    <fieldset class="student_5">
+                        view
+                    </fieldset>
+                    <fieldset class="student_6">
+                        4h ago
+                    </fieldset>
+                </fieldset>
+                <fieldset class="student_fieldset1">
+                    <img class="ethan_img" src="profile img.png">
+                    <fieldset class="student_1">
+                        Smita Wagh
+                        <p class="student_display">Casual Leave</p>
+                    </fieldset>
+                    <fieldset class="student_2">
+                        12th May 2025-17th May 2025
+                    </fieldset>
+                    <fieldset class="student_3">
+                        Approve
+                    </fieldset>
+                    <fieldset class="student_4">
+                        Reject
+                    </fieldset>
+                    <fieldset class="student_5">
+                        view
+                    </fieldset>
+                    <fieldset class="student_6">
+                        7h ago
+                    </fieldset>
+                </fieldset>
+                <fieldset class="student_fieldset1">
+                    <img class="ethan_img" src="profile img.png">
+                    <fieldset class="student_1">
+                        Aryan Patil
+                        <p class="student_display">Emergency Leave</p>
+                    </fieldset>
+                    <fieldset class="student_2">
+                        12th May 2025-17th May 2025
+                    </fieldset>
+                    <fieldset class="student_3">
+                        Approve
+                    </fieldset>
+                    <fieldset class="student_4">
+                        Reject
+                    </fieldset>
+                    <fieldset class="student_5">
+                        view
+                    </fieldset>
+                    <fieldset class="student_6">
+                        7h ago
+                    </fieldset>
+                </fieldset>
+            </fieldset>
+
+        </div>
+</body>
+
+</html>

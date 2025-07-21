@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .interface {}
+
+        .interface1 {
+            height: 100px;
+        }
+
+        .interface2 {
+            height: 460px;
+        }
+
+        .interface1_horizontal1 {
+            height: 25px;
+            border: 2px solid gray;
+            display: flex;
+            gap: 500px;
+        }
+
+        .interface1_horizontal2 {
+            height: 80px;
+            border-left: 2px solid gray;
+            border-right: 2px solid gray;
+        }
+
+        .horizontal1_2_bar {
+            display: flex;
+            gap: 30px;
+        }
+
+        .horizontal_bar_img {
+            width: 22px;
+            height: 22px;
+        }
+
+        .horizontal1_1 {}
+
+        .horizontal_bar {
+            width: 23px;
+            height: 23px;
+        }
+
+        .horizontal_align {
+            margin-left: 20px;
+        }
+
+        .horizontal_align b {
+            font-size: larger;
+
+        }
+
+        .interface2_1 {
+            width: 50%;
+        }
+
+        .interface2_2 {
+            margin-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+            border-left: 2px solid gray;
+            border-right: 2px solid gray;
+            width: 50%;
+        }
+
+        .interface2 {
+            display: flex;
+        }
+
+        .interface2_1_1 {
+
+            height: 50%;
+        }
+
+        .interface2_1_2 {
+            background-color: indianred;
+            height: 50%;
+        }
+
+        .Dash1 {
+            display: flex;
+            margin-left: 40px;
+            gap: 40px;
+            margin-top: 5px;
+        }
+
+        .Dash10 {
+            border-radius: 10px;
+            width: 210px;
+            height: 100px;
+        }
+
+        .Apply {
+            width: 330px;
+            height: 30px;
+            margin-top: 22px;
+            margin-left: 140px;
+            border-radius: 4px;
+            background-color: rgb(2, 47, 48);
+            color: white;
+
+        }
+
+        .Apply_img {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+
+        .Dash_img {
+            width: 34px;
+            height: 30px;
+        }
+
+        .insight1 {
+            display: flex;
+        }
+
+        .insight2 {
+            display: flex;
+        }
+
+        .next {
+            background-color: white;
+            width: 330px;
+            height: 100px;
+            border-radius: 15px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .approved {
+            background-color: green;
+            width: 330px;
+            height: 100px;
+            border-radius: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .pending {
+            background-color: orange;
+            width: 330px;
+            height: 100px;
+            border-radius: 15px;
+            margin-left: 20px;
+        }
+
+        .rejected {
+            background-color: red;
+            width: 330px;
+            height: 100px;
+            border-radius: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .sick {
+            width: ;
+            height: ;
+        }
+    </style>
+</head>
+
+<body class="interface">
+
+    <div class="interface1">
+        <div class="interface1_horizontal1">
+            <div class="horizontal1_1">
+                <img class="horizontal_bar" src="zcoer.png">
+                Hostel Leave Managment
+            </div>
+            <div class="horizontal1_2_bar">
+                <div class="horizontal_bar_1">
+                    <a href="student_dashboard.html">Dashboard</a>
+                </div>
+                <div class="horizontal_bar_1">
+                    <a href="student_dashboard.html">Apply Leave</a>
+                </div>
+                <div class="horizontal_bar_1">
+                    <a href="student_dashboard.html">History</a>
+                </div>
+                <div class="horizontal_bar_1">
+                    <a href="student_dashboard.html">Notification</a>
+                </div>
+                <div class="horizontal_bar_1">
+                    <a href="student_dashboard.html">Profile</a>
+                </div>
+                <img class="horizontal_bar_img" src="profile img.png">
+            </div>
+        </div>
+        <div class="interface1_horizontal2">
+            <div class="horizontal_align">
+                <b>Student Dashboard</b><br>
+                Your leave summary at a glance
+            </div>
+        </div>
+    </div>
+    <div class="interface2">
+        <div class="interface2_1">
+            <div class="interface2_1_1">
+                Dashboard
+                <div class="Dash1">
+                    <fieldset class="Dash10">
+                        <img class="Dash_img" src="leaves taken.png"><br>
+                        Leaves Taken<br><br>
+                        04 Days
+                    </fieldset>
+                    <fieldset class="Dash10">
+                        <img class="Dash_img" src="pending_request.png"><br>
+                        Pending Request<br><br>
+                        01 Request
+                    </fieldset>
+                </div>
+                <div class="Dash2">
+                    <button type="submit" class="Apply">
+                        <img class="Apply_img" src="Apply for leave.png">
+                        Apply for Leave
+                    </button>
+                </div>
+
+            </div>
+            <div class="interface2_1_2">
+                Quick Insights
+                <div class="insight1">
+                    <div class="next">aaa</div>
+                    <div class="approved">aaa</div>
+
+                </div>
+                <div class="insight2">
+                    <div class="pending">aaa</div>
+                    <div class="rejected">aaa</div>
+                </div>
+            </div>
+        </div>
+        <div class="interface2_2">
+            Recent Leave Activity
+            <div class="sick"></div>
+            <div class="sick1"></div>
+            <div class="casual"></div>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
